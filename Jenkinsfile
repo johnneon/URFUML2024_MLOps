@@ -29,7 +29,6 @@ pipeline {
             steps {
                 dir('/app/ml') {
                     sh '''
-                    source env/bin/activate
                     python3 data_preprocessing.py
                     '''
                 }
