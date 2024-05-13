@@ -34,21 +34,16 @@ pipeline {
         }
         stage('Model training') {
             steps {
-                dir('/app/ml') {
                     sh '''
-                    python3 model_preparation.py
+                    .venv/bin/python3 app/ml/model_preparation.py
                     '''
-                }
             }
         }
         stage('Model testing') {
             steps {
-                dir('/app/ml') {
                     sh '''
-                    source env/bin/activate
-                    python3 model_testing.py
+                    .venv/bin/python3 app/ml/model_testing.py
                     '''
-                }
             }
         }
     }
