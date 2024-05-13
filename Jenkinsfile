@@ -39,7 +39,6 @@ pipeline {
             steps {
                 dir('/app/ml') {
                     sh '''
-                    source env/bin/activate
                     python3 model_preparation.py
                     '''
                 }
