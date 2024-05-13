@@ -23,7 +23,6 @@ pipeline {
                         $env_name/bin/pip3 install -r requirements.txt
                         echo "Dependencies installed."
                     '''
-                }
             }
         }
         stage('Data preprocessing') {
