@@ -28,6 +28,7 @@ pipeline {
         stage('Data preprocessing') {
             steps {
                     sh '''
+                    pwd
                     python3 /app/ml/data_preprocessing.py
                     '''
             }
