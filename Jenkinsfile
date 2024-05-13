@@ -27,11 +27,9 @@ pipeline {
         }
         stage('Data preprocessing') {
             steps {
-                dir('/app/ml') {
                     sh '''
-                    python3 data_preprocessing.py
+                    python3 /app/ml/data_preprocessing.py
                     '''
-                }
             }
         }
         stage('Model training') {
