@@ -29,7 +29,7 @@ pipeline {
             steps {
                     sh '''
                     pwd
-                    python3 /app/ml/data_preprocessing.py
+                    python3 app/ml/data_preprocessing.py
                     '''
             }
         }
