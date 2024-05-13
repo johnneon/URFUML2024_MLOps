@@ -1,10 +1,10 @@
-import opendatasets as od
+#import opendatasets as od
 import pandas as pd
 from scipy.stats import yeojohnson
 from sklearn.model_selection import train_test_split
 import os
 
-od.download("https://www.kaggle.com/datasets/camnugent/california-housing-prices", force=False)
+#od.download("https://www.kaggle.com/datasets/camnugent/california-housing-prices", force=False)
 
 
 def preprocessing(data: pd.DataFrame, threshold=0.01) -> pd.DataFrame:
@@ -53,7 +53,7 @@ def normal_distribution(data: pd.DataFrame, num_columns: list) -> pd.DataFrame:
 
 
 def to_teach_and_separate_data():
-    df = pd.read_csv('california-housing-prices/housing.csv')
+    df = pd.read_csv('app/ml/dataset/housing.csv')
 
     df = delete_columns(df, 'longitude', 'latitude')
 
