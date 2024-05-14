@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 import os
 
-from app.ml.metric.metric_mse_r2 import calculate_metric
+from metric.metric_mse_r2 import calculate_metric
 
 
 def predict():
