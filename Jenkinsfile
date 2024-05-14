@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+        stage('Download the repository from git') {
+            steps {
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/johnneon/URFUML2024_MLOps.git']])
+            }
+        }
         stage('Setup virtual environment') {
             steps {
                 echo 'Creating a virtual environment, if not created'
@@ -46,7 +51,24 @@ pipeline {
                     '''
             }
         }
-    }
+        stage('Build dockers') {
+            steps {
+                script {
+                    sh 'docker build -t urfuml2024_mlops:$BUILD_NUMBER .'     
+	                echo 'Build Image Completed'
+                }
+            }
+        }
+        stage('Run dockers') {
+            steps {
+                script {
+                    sh 'docker run --rm -i -p 8000:8000 urfuml2024_mlops:$BUILD_NUMBER'
+	                echo 'Run Image Completed'
+                }
+            }
+        }
+	}
+    
     post {
         always {
             echo 'The pipeline is finished!'
