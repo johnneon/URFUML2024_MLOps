@@ -5,8 +5,8 @@ from sklearn.metrics import mean_squared_error as mse
 import joblib
 import os
 
-from pipeline import preprocessors_all
-from metric.metric_mse_r2 import calculate_metric
+from app.ml.pipeline import preprocessors_all
+from app.ml.metric.metric_mse_r2 import calculate_metric
 
 def model_preparation():
     X_train = pd.read_csv(os.path.join(os.path.dirname(__file__), "test/X_train.csv"))
