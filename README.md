@@ -90,6 +90,16 @@ docker compose up --build
 - median_house_value - Средняя стоимость жилья
 - ocean_proximity - Близость к океану
 
+## Тестирование
+### Установка pytest
+```
+pip install pytest
+```
+### Для тестирования 
+```
+pytest 
+```
+
 ## Над проектом трудились
 
 - Ильин В.Б. – лидер проекта [GitHub](https://github.com/Viktor-125142).
