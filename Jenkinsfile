@@ -28,6 +28,11 @@ pipeline {
                         $env_name/bin/pip3 install -r requirements.txt
                         echo "Dependencies installed."
                     '''
+                    sh '''
+                        env_name=${1:-".venv"}
+                        $env_name/bin/pip3 install -e .
+                        echo "Local packages are installed."
+                    '''
             }
         }
         stage('Data preprocessing') {
