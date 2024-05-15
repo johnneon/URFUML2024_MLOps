@@ -51,7 +51,7 @@ cp kaggle.json src/
 
 подготовки модели и тестирования:
 ```bash
-python src/data_preprocessing.py
-python src/model_preparation.py
-python src/model_testing.py
+python app/ml/data_preprocessing.py
+python app/ml/model_preparation.py
+python app/ml/model_testing.py
 ```

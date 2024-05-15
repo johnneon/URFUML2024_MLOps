@@ -13,4 +13,4 @@ def predict(data):
         df = pd.DataFrame(data=[data.values()], columns=data.keys())
         prediction = model.predict(df)
 
-        return prediction[0]
+    return prediction[0]
