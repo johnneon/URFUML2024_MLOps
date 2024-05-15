@@ -60,7 +60,7 @@ pipeline {
             steps {
                 script {
                     sh 'docker build -t urfuml2024_mlops:$BUILD_NUMBER .'     
-	                echo 'Build Image Completed'
+	                echo 'Build Image Completed '
                 }
             }
         }

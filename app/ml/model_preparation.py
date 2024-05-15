@@ -25,9 +25,9 @@ def model_preparation():
 
     joblib.dump(pipe_all, os.path.join(os.path.dirname(__file__), "model/DecisionTreeRegressor_model.pkl"))
 
-    print(f"r2 на тренировочной выборке: {calculate_metric(pipe_all, X_train, y_train):.4f}")
+    print(f"r2 на тренировочной выборке: {calculate_metric(pipe_all, X_train, y_train):.4f} ")
 
-    print(f"mse на тренировочной выборке: {calculate_metric(pipe_all, X_train, y_train, mse):.4f}")
+    print(f"mse на тренировочной выборке: {calculate_metric(pipe_all, X_train, y_train, mse):.4f} ")
 
 
 model_preparation()
