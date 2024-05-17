@@ -9,8 +9,8 @@ from app.ml.pipeline import preprocessors_all
 from app.ml.metric.metric_mse_r2 import calculate_metric
 
 def model_preparation():
-    X_train = pd.read_csv(os.path.join(os.path.dirname(__file__), "test/X_train.csv"))
-    y_train = pd.read_csv(os.path.join(os.path.dirname(__file__), "test/y_train.csv")).squeeze()
+    X_train = pd.read_csv(os.path.join(os.path.dirname(__file__), "train/X_train.csv"))
+    y_train = pd.read_csv(os.path.join(os.path.dirname(__file__), "train/y_train.csv")).squeeze()
 
     pipe_all = Pipeline([
         ('preprocessors', preprocessors_all),

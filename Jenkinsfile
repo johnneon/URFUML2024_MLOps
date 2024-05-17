@@ -56,6 +56,19 @@ pipeline {
                     '''
             }
         }
+        stage('Test') { 
+            steps {
+                sh '''
+                .venv/bin/pip3 install pytest
+                '''
+                sh '.venv/bin/python3 -m pytest --junit-xml test-reports/results.xml app/test_main.py' 
+            }
+            post {
+                always {
+                    junit 'test-reports/results.xml' 
+                }
+            }
+        }    
         stage('Build dockers') {
             steps {
                 script {
