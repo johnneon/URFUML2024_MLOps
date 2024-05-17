@@ -53,6 +53,8 @@ def normal_distribution(data: pd.DataFrame, num_columns: list) -> pd.DataFrame:
 
 
 def to_teach_and_separate_data():
+    os.mkdir("train")
+    os.mkdir("test")
     df = pd.read_csv('app/ml/dataset/housing.csv')
 
     df = delete_columns(df, 'longitude', 'latitude')
