@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Download the repository from git') {
             steps {
-                checkout scmGit(branches: [[name: '*/vlad_bugfix_jenkins']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/johnneon/URFUML2024_MLOps.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/johnneon/URFUML2024_MLOps.git']])
             }
         }
         stage('Setup virtual environment') {
