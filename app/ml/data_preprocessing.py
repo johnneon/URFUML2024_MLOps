@@ -65,11 +65,11 @@ def to_teach_and_separate_data():
 
     X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.3, random_state=42)
 
-    X_train.to_csv(os.path.join(os.path.dirname(__file__), 'test/X_train.csv'), index=False)
-    y_train.to_csv(os.path.join(os.path.dirname(__file__), 'test/y_train.csv'), index=False)
+    X_train.to_csv(os.path.join(os.path.dirname(__file__), 'train/X_train.csv'), index=False)
+    y_train.to_csv(os.path.join(os.path.dirname(__file__), 'train/y_train.csv'), index=False)
 
-    X_val.to_csv(os.path.join(os.path.dirname(__file__), 'train/X_val.csv'), index=False)
-    y_val.to_csv(os.path.join(os.path.dirname(__file__), 'train/y_val.csv'), index=False)
+    X_val.to_csv(os.path.join(os.path.dirname(__file__), 'test/X_val.csv'), index=False)
+    y_val.to_csv(os.path.join(os.path.dirname(__file__), 'test/y_val.csv'), index=False)
 
 
 if __name__ == '__main__':

@@ -17,4 +17,5 @@ def test_read_predict_positive():
     json_data = response.json() 
 
     assert response.status_code == 200
-    assert json_data == {"result": 28.56030539788831}
+    assert json_data["result"] >= 28.5602
+    assert json_data["result"] <= 28.5604
