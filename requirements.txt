@@ -42,3 +42,4 @@ webencodings==0.5.1
 fastapi~=0.111.0
 setuptools~=69.0.2
 pydantic~=2.7.1
+pytest
