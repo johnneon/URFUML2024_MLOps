@@ -90,14 +90,8 @@ docker compose up --build
 - ocean_proximity - Близость к океану
 
 ## Тестирование
-### Установка pytest
-```
-pip install pytest
-```
-### Для тестирования 
-```
-pytest 
-```
+
+### Запустить тесты можно командой `pytest`
   
 ## Jenkins  
 ### Инструкция по запуску  
