@@ -108,6 +108,8 @@ docker compose up --build
 5. Запуск юнит-тестов
 6. Сборка контейнера Docker
 7. Запуск контейнера Docker
+   ![Screen-978](https://github.com/johnneon/URFUML2024_MLOps/assets/127988202/a6678a24-5ff8-43e3-91c8-443d3c37ba52)
+
 ## DVC
 Версии дата сета хранятся в [Google Drive](https://drive.google.com/drive/folders/1EWmKWhjIQ0AQOPBnS-vTie2MMtcNQFPI?usp=drive_link)  
 Путь также отображается в файле [config](./.dvc/config)
