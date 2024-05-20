@@ -100,6 +100,17 @@ pip install pytest
 pytest 
 ```
 
+## DVC
+Версии дата сета хранятся в [Google Drive](https://drive.google.com/drive/folders/1EWmKWhjIQ0AQOPBnS-vTie2MMtcNQFPI?usp=drive_link)  
+Путь также отображается в файле [config](./.dvc/config)
+### Пример загрузки разных версий
+Базовая версия файла (до изменений)
+![Снимок экрана 2024-05-19 160421](https://github.com/johnneon/URFUML2024_MLOps/assets/53440318/a0918b19-e614-4f8f-9e92-5c30fd7ca164)
+
+Версия файла после внесения изменений
+![Снимок экрана 2024-05-19 160518](https://github.com/johnneon/URFUML2024_MLOps/assets/53440318/ec7e0828-f03e-4615-b063-7241882a024e)
+
+
 ## Над проектом трудились
 
 - Ильин В.Б. – лидер проекта [GitHub](https://github.com/Viktor-125142).
