@@ -14,7 +14,6 @@ docker compose up --build
 ```
 Приложение будет доступно на порту 8000
 
-Сейчас же достаточно сделать - [app/README.md](./app/README.md).
 
 ## API
 ### FastApi
